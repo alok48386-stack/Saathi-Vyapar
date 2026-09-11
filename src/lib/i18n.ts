@@ -188,6 +188,8 @@ export const translations: Record<Language, Record<string, string>> = {
     nav_login: 'लॉगिन',
     nav_register: 'पंजीकरण',
     nav_language_toggle: 'English',
+    landing_scheme_mudra: 'मुद्रा शिशु, किशोर और तरुण',
+landing_scheme_standup: 'स्टैंड-अप इंडिया (SC/ST और महिलाएँ)',
 
     // ── Login page
     login_title: 'उद्यमी पोर्टल',
