@@ -22,6 +22,8 @@ export const translations: Record<Language, Record<string, string>> = {
     nav_login: 'Login',
     nav_register: 'Register',
     nav_language_toggle: 'हिन्दी',
+    landing_scheme_mudra: 'Mudra Shishu, Kishor & Tarun',
+landing_scheme_standup: 'Stand-Up India (SC/ST & Women)',
 
     // ── Login page
     login_title: 'Entrepreneur Portal',
