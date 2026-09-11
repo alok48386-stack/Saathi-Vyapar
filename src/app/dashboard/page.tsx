@@ -430,6 +430,12 @@ export default async function DashboardPage({ searchParams }: PageProps) {
             >
               Facilitator
             </Link>
+            <Link
+              href="/dashboard/settings"
+              className="px-4 py-2 bg-white hover:bg-[#F5F1E6] text-[#0B1E33] text-xs font-semibold rounded-full border border-[#C9A24B]/30 transition-colors"
+            >
+              ⚙️ Settings
+            </Link>
             <LogoutButton />
           </div>
         </header>
