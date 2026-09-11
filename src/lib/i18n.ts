@@ -22,6 +22,7 @@ export const translations: Record<Language, Record<string, string>> = {
     nav_login: 'Login',
     nav_register: 'Register',
     nav_language_toggle: 'हिन्दी',
+    landing_scheme_pmegp: 'PMEGP · 35% Capital Subsidy',
 
     // ── Login page
     login_title: 'Entrepreneur Portal',
@@ -188,6 +189,7 @@ export const translations: Record<Language, Record<string, string>> = {
     nav_login: 'लॉगिन',
     nav_register: 'पंजीकरण',
     nav_language_toggle: 'English',
+    landing_scheme_pmegp: 'PMEGP · 35% पूंजी सब्सिडी',
 
     // ── Login page
     login_title: 'उद्यमी पोर्टल',
