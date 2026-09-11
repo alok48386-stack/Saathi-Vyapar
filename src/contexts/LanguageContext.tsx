@@ -7,7 +7,11 @@
  * Wrap the app in <LanguageProvider> and call useLanguage() in any client component.
  */
 
-import React, { createContext, useContext, useState, useCallback } from 'react';
+import React, { createContext,
+               useContext,
+               useState, 
+               useCallback,
+              useEffect,} from 'react';
 import type { ReactNode } from 'react';
 import { translations, Language } from '@/lib/i18n';
 
@@ -18,12 +22,30 @@ interface LanguageContextValue {
 }
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
-
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>('en');
 
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('saathi-language');
+
+    if (savedLanguage === 'hi' || savedLanguage === 'en') {
+      setLanguage(savedLanguage);
+    }
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.lang =
+      language === 'hi' ? 'hi-IN' : 'en-IN';
+  }, [language]);
+
   const toggleLanguage = useCallback(() => {
-    setLanguage((prev) => (prev === 'en' ? 'hi' : 'en'));
+    setLanguage((prev) => {
+      const nextLanguage = prev === 'en' ? 'hi' : 'en';
+
+      localStorage.setItem('saathi-language', nextLanguage);
+
+      return nextLanguage;
+    });
   }, []);
 
   const t = useCallback(
