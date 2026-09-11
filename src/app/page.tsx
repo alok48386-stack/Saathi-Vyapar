@@ -227,7 +227,7 @@ export default function ShowcaseHomePage() {
             <span className="text-xs text-[#C9A24B]/60">◆</span>
             <span>Mudra Shishu, Kishor & Tarun</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
-            <span>Stand-Up India (SC/ST & Women)</span>
+            <span>{t('landing_scheme_standup')}</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
             <span>PM SVANidhi Micro-Credit</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
@@ -237,7 +237,7 @@ export default function ShowcaseHomePage() {
             <span className="text-xs text-[#C9A24B]/60">◆</span>
             <span>Mudra Shishu, Kishor & Tarun</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
-            <span>Stand-Up India (SC/ST & Women)</span>
+            <span>{t('landing_scheme_standup')}</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
             <span>PM SVANidhi Micro-Credit</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
