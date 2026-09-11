@@ -218,8 +218,8 @@ export default function ShowcaseHomePage() {
       <section className="py-8 bg-[#F5F1E6] border-y border-[#C9A24B]/25 overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 text-center mb-3">
           <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.28em] text-[#C9A24B]">
-            Connects you to
-          </span>
+  {t('landing_connects_you_to')}
+</span>
         </div>
         <div className="relative w-full overflow-hidden flex items-center">
           <div className="animate-marquee whitespace-nowrap flex items-center gap-12 text-[#C9A24B] font-['Playfair_Display',Georgia,serif] text-sm sm:text-lg tracking-widest uppercase select-none">
