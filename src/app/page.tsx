@@ -30,11 +30,13 @@
  */
 
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 import Link from 'next/link';
 import VoiceOnboardingModal from '@/components/VoiceOnboardingModal';
 import LanguageToggleButton from '@/components/LanguageToggleButton';
 
 export default function ShowcaseHomePage() {
+  const { t } = useLanguage();
   const [activePersona, setActivePersona] = useState<'vendor' | 'tailor' | 'artisan' | 'dairy'>('vendor');
   const [isVoiceModalOpen, setIsVoiceModalOpen] = useState(false);
   const [isFabOpen, setIsFabOpen] = useState(false);
@@ -92,35 +94,34 @@ export default function ShowcaseHomePage() {
 
           {/* Center: Nav links in cream */}
           <nav className="hidden md:flex items-center gap-7 text-[#F5F1E6]/85 text-xs font-medium tracking-wide">
-            <a href="#product" className="hover:text-[#C9A24B] transition-colors">
-              Product
-            </a>
-            <a href="#how-it-works" className="hover:text-[#C9A24B] transition-colors">
-              How It Works
-            </a>
+           <a href="#product" className="hover:text-[#C9A24B] transition-colors">
+  {t('nav_product')}
+</a>
+           <a href="#how-it-works" className="hover:text-[#C9A24B] transition-colors">
+  {t('nav_how_it_works')}
+</a>
             <a href="#impact" className="hover:text-[#C9A24B] transition-colors">
-              Impact
-            </a>
+  {t('nav_impact')}
+</a>
             <a href="#team" className="hover:text-[#C9A24B] transition-colors">
-              Team
-            </a>
+  {t('nav_team')}
+</a>
           </nav>
 
           {/* Right: Language Toggle + Gold-outlined "Try the Demo" Button */}
           <div className="flex items-center gap-2.5">
             <LanguageToggleButton className="border-[#C9A24B]/40 text-[#F5F1E6]/80 hover:text-[#F5F1E6]" />
-            <Link
-              href="/login"
-              className="hidden sm:inline-block text-xs text-[#F5F1E6]/80 hover:text-[#F5F1E6] font-medium px-3 py-1.5 transition-colors"
-            >
-              Sign In
-            </Link>
-            <Link
-              href="/onboarding"
-              className="border border-[#C9A24B] text-[#C9A24B] hover:bg-[#C9A24B] hover:text-[#0B1E33] font-semibold text-xs sm:text-sm px-5 py-2 rounded-full transition-all duration-300 shadow-sm"
-            >
-              Try the Demo
-            </Link>
+           <Link
+  href="/login"
+  className="hidden sm:inline-block text-xs text-[#F5F1E6]/80 hover:text-[#F5F1E6] font-medium px-3 py-1.5 transition-colors"
+>
+  {t('nav_login')}
+</Link><Link
+  href="/onboarding"
+  className="border border-[#C9A24B] text-[#C9A24B] hover:bg-[#C9A24B] hover:text-[#0B1E33] font-semibold text-xs sm:text-sm px-5 py-2 rounded-full transition-all duration-300 shadow-sm"
+>
+  {t('nav_try_demo')}
+</Link>
           </div>
         </div>
       </header>
@@ -133,46 +134,44 @@ export default function ShowcaseHomePage() {
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0B1E33]/5 border border-[#C9A24B]/30 mb-6">
           <span className="w-2 h-2 rounded-full bg-[#C9A24B] animate-pulse" />
           <p className="text-[11px] sm:text-xs font-bold text-[#C9A24B] tracking-[0.2em] uppercase font-sans">
-            SIH26091 / Ministry of Social Justice & Empowerment / Team Pantheon Eternal
+            {t('landing_hero_badge')}
           </p>
         </div>
 
         {/* Primary Serif Display Headline */}
-        <h1 className="font-['Playfair_Display',Georgia,serif] text-4xl sm:text-6xl md:text-7xl font-bold text-[#0B1E33] tracking-tight leading-[1.1] mb-6">
-          Bring clarity to <br className="hidden sm:inline" />
-          <span className="italic text-[#0B1E33]">every rural business</span>
-        </h1>
+        <h1 className="font-['Playfair_Display',Georgia,serif] text-4xl sm:text-6xl md:text-7xl font-medium">
+  {t('landing_hero_title_1')} <br className="hidden sm:inline" />
+  <span className="italic text-[#0B1E33]">
+    {t('landing_hero_title_2')}
+  </span>
+</h1>
 
         {/* Subtitle */}
-        <p className="text-[#0B1E33]/80 font-['Inter',sans-serif] text-base sm:text-xl max-w-3xl mx-auto leading-relaxed mb-10">
-          An AI-driven hyper-local business advisor for rural micro-entrepreneurs — providing
-          provably deterministic break-even calculations, handwritten ledger OCR, and instant
-          government scheme matching on <span className="font-semibold text-[#0B1E33]">WhatsApp</span>,{' '}
-          <span className="font-semibold text-[#0B1E33]">SMS</span>, or the{' '}
-          <span className="font-semibold text-[#0B1E33]">web</span>.
-        </p>
+<p className="text-[#0B1E33]/80 font-['Inter',sans-serif] text-base sm:text-xl max-w-3xl mx-auto leading-relaxed mb-10">
+  {t('landing_hero_description')}
+</p>
 
         {/* Action Button Group */}
         <div className="flex flex-wrap items-center justify-center gap-4 mb-14">
           <Link
-            href="/onboarding"
-            className="px-8 py-4 bg-[#0B1E33] hover:bg-[#142D4B] text-[#F5F1E6] font-semibold text-sm rounded-full shadow-[0_10px_30px_rgba(11,30,51,0.2)] hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
-          >
-            Launch Advisory Demo
-          </Link>
+  href="/onboarding"
+  className="px-8 py-4 bg-[#0B1E33] hover:bg-[#142D4B] text-[#F5F1E6] font-semibold text-sm rounded-full shadow-[0_10px_30px_rgba(11,30,51,0.2)] hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
+>
+  {t('landing_hero_demo')}
+</Link>
           <button
             onClick={() => setIsVoiceModalOpen(true)}
             className="px-7 py-4 bg-[#F5F1E6] border border-[#C9A24B] text-[#0B1E33] hover:bg-[#C9A24B] hover:text-[#0B1E33] font-semibold text-sm rounded-full transition-all duration-300 shadow-sm flex items-center gap-2"
           >
             <span>🎙️</span>
-            <span>Voice Registration</span>
+<span>{t('landing_hero_voice')}</span>
           </button>
           <Link
-            href="/facilitator"
-            className="px-6 py-4 text-[#0B1E33]/80 hover:text-[#0B1E33] font-semibold text-sm rounded-full hover:bg-[#0B1E33]/5 transition-colors"
-          >
-            Facilitator Hub →
-          </Link>
+  href="/facilitator"
+  className="px-6 py-4 text-[#0B1E33]/80 hover:text-[#0B1E33] font-semibold text-sm rounded-full hover:bg-[#0B1E33]/5 transition-colors"
+>
+  {t('landing_hero_facilitator')}
+</Link>
         </div>
 
         {/* Full-width Rounded-Corner (40px) Hero Image */}
@@ -218,7 +217,7 @@ export default function ShowcaseHomePage() {
       <section className="py-8 bg-[#F5F1E6] border-y border-[#C9A24B]/25 overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 text-center mb-3">
           <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.28em] text-[#C9A24B]">
-            Connects you to
+            {t('landing_connects_you_to')}
           </span>
         </div>
         <div className="relative w-full overflow-hidden flex items-center">
