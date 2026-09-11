@@ -21,6 +21,7 @@ export const translations: Record<Language, Record<string, string>> = {
     nav_try_demo: 'Try the Demo',
     nav_login: 'Login',
     nav_register: 'Register',
+    landing_connects_you_to: 'Connects you to',
     nav_language_toggle: 'हिन्दी',
 
     // ── Login page
@@ -187,6 +188,7 @@ export const translations: Record<Language, Record<string, string>> = {
     nav_try_demo: 'डेमो देखें',
     nav_login: 'लॉगिन',
     nav_register: 'पंजीकरण',
+    landing_connects_you_to: 'आपको इन योजनाओं से जोड़ता है',
     nav_language_toggle: 'English',
 
     // ── Login page
