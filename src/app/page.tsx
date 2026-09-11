@@ -223,7 +223,7 @@ export default function ShowcaseHomePage() {
         </div>
         <div className="relative w-full overflow-hidden flex items-center">
           <div className="animate-marquee whitespace-nowrap flex items-center gap-12 text-[#C9A24B] font-['Playfair_Display',Georgia,serif] text-sm sm:text-lg tracking-widest uppercase select-none">
-            <span>PMEGP · 35% Capital Subsidy</span>
+<span>{t('landing_scheme_pmegp')}</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
             <span>Mudra Shishu, Kishor & Tarun</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
@@ -233,7 +233,7 @@ export default function ShowcaseHomePage() {
             <span className="text-xs text-[#C9A24B]/60">◆</span>
             <span>NABARD SHG Credit-Linkage</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
-            <span>PMEGP · 35% Capital Subsidy</span>
+            <span>{t('landing_scheme_pmegp')}</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
             <span>Mudra Shishu, Kishor & Tarun</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
