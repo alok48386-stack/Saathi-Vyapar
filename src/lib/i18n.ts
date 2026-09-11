@@ -22,6 +22,15 @@ export const translations: Record<Language, Record<string, string>> = {
     nav_login: 'Login',
     nav_register: 'Register',
     nav_language_toggle: 'हिन्दी',
+        // ── Landing Page
+    landing_hero_badge: 'AI-Powered Rural Business Advisory',
+    landing_hero_title_1: 'Bring clarity to',
+    landing_hero_title_2: 'every rural business',
+    landing_hero_description:
+      'An AI-driven hyper-local business advisor for rural micro-entrepreneurs — providing break-even calculations, handwritten ledger analysis, and government scheme matching on WhatsApp, SMS, or the web.',
+    landing_hero_demo: 'Launch Advisory Demo',
+    landing_hero_voice: 'Voice Registration',
+    landing_hero_facilitator: 'Facilitator Hub →',
 
     // ── Login page
     login_title: 'Entrepreneur Portal',
@@ -188,6 +197,15 @@ export const translations: Record<Language, Record<string, string>> = {
     nav_login: 'लॉगिन',
     nav_register: 'पंजीकरण',
     nav_language_toggle: 'English',
+        // ── Landing Page
+    landing_hero_badge: 'ग्रामीण व्यवसायों के लिए AI व्यापार सलाहकार',
+    landing_hero_title_1: 'हर ग्रामीण व्यवसाय में',
+    landing_hero_title_2: 'स्पष्टता लाएँ',
+    landing_hero_description:
+      'ग्रामीण छोटे उद्यमियों के लिए AI आधारित स्थानीय व्यापार सलाहकार — जो ब्रेक-ईवन गणना, हस्तलिखित बही-खाते का विश्लेषण और सरकारी योजनाओं का मिलान करने में मदद करता है। यह WhatsApp, SMS और वेब पर उपलब्ध है।',
+    landing_hero_demo: 'व्यापार सलाह डेमो शुरू करें',
+    landing_hero_voice: 'आवाज़ से पंजीकरण',
+    landing_hero_facilitator: 'सुविधाकर्ता केंद्र →',
 
     // ── Login page
     login_title: 'उद्यमी पोर्टल',
