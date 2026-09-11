@@ -225,7 +225,7 @@ export default function ShowcaseHomePage() {
           <div className="animate-marquee whitespace-nowrap flex items-center gap-12 text-[#C9A24B] font-['Playfair_Display',Georgia,serif] text-sm sm:text-lg tracking-widest uppercase select-none">
             <span>PMEGP · 35% Capital Subsidy</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
-            <span>Mudra Shishu, Kishor & Tarun</span>
+            <span>{t('landing_scheme_mudra')}</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
             <span>Stand-Up India (SC/ST & Women)</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
@@ -235,7 +235,7 @@ export default function ShowcaseHomePage() {
             <span className="text-xs text-[#C9A24B]/60">◆</span>
             <span>PMEGP · 35% Capital Subsidy</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
-            <span>Mudra Shishu, Kishor & Tarun</span>
+            <span>{t('landing_scheme_mudra')}</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
             <span>Stand-Up India (SC/ST & Women)</span>
             <span className="text-xs text-[#C9A24B]/60">◆</span>
